@@ -1,18 +1,19 @@
 <?php
 /**
- * Plugin Name:     Serialize value retriever
+ * Plugin Name:     Car Demon Shortcodes
  * Plugin URI:      PLUGIN SITE HERE
- * Description:     Get the decode_string meta value based on shortcode key
+ * Description:     Get the Car Demon Shortcodes based on key
  * Author:          Partha
  * Author URI:      YOUR SITE HERE
- * Text Domain:     serialize_value_retriver
+ * Text Domain:     Car Demon Shortcodes
  * Domain Path:     /languages
  * Version:         0.1.0
  *
- * @package         Serialize_value_retriver
+ * @package         Car Demon Shortcodes
  */
 
 //Get the string from shortcode and retrieve value
+
 
 
 function get_decode_string($atts) {   
