@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name:     Serialize_value_retriver
+ * Plugin Name:     Serialize value retriever
  * Plugin URI:      PLUGIN SITE HERE
  * Description:     Get the decode_string meta value based on shortcode key
  * Author:          Partha
@@ -15,9 +15,11 @@
 //Get the string from shortcode and retrieve value
 
 
-function get_decode_string($atts) {    
+function get_decode_string($atts) {   
+    global $post;
+
     $atts = $atts[0];    
-    $query = get_post_meta(10, 'decode_string' );
+    $query = get_post_meta($post->ID, 'decode_string' );
     $string_meta_value = $query[0][$atts];
     
     return $string_meta_value;
