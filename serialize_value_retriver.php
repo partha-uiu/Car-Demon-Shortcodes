@@ -17,7 +17,11 @@
 
 function get_decode_string($atts) {   
     global $post;
-
+     
+    if(!isset($atts[0])) {
+        return '';  
+    }
+    
     $atts = $atts[0];    
     $query = get_post_meta($post->ID, 'decode_string' );
     $string_meta_value = $query[0][$atts];
