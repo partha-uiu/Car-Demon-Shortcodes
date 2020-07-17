@@ -15,7 +15,9 @@
 //Get the string from shortcode and retrieve value
 
 
-function get_decode_string($atts) git {   
+
+
+function get_decode_string($atts) {   
     global $post;
      
     if(!isset($atts[0])) {
